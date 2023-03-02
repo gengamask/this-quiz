@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="storage/css/style.css"/>
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://font.googleapis.com">
+    <link rel="preconnect" href="https://font.gstatic.com"crossorigin>
+    <link href ="https:fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <div class = "header">
+            <h1 id="highscore">View Highscore</h1>
+            <p id="time">Time: <span id="tiemleft">100</span></p>
+            </div>
+    </header>
+    <section id="startcon">
+        <div class="start">
+            <h2>Click the start button to begin quiz</h2>
+            <button id="startbutton" type="button">Start</button>
+        </div>
+    </section>
+    <section id="question-container">
+        <div id="questionbox">
+            <h4 id="questions"></h4>
+            <div id="choices"></div>
+            <p id="display"></p>
+    </section>
+    <section id="initialpage">
+        <div id="initialcontainer">
+            <h3>All Done!</h3>
+            <p id="score">Your Score is: <span id="score2"></span></p>
+            <form id = "todo-form" method="POST">
+                <input type="text" id="initial" name="initial" placeholder ="Enter Initial" size="9">
+                <button type="submit" id="submitbutton">Submit!</button>
+            </form>
+        </div>
+    </section>
+    <section id="initialstorage">
+        <h5>Score Board</h5>
+        <ul id="storeinitial"></ul>
+        <div>
+            <button id="back">Go back</button>
+            <button id="clear">Clear Score</button>
+        </div>
+    </section>
+
+    <script src="storage/js/script.js"></script>
+</body>
